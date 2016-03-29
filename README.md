@@ -1,3 +1,3 @@
 # share
 
-http://youmi.github.io/share
+http://share.umlife.com

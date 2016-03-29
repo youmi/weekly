@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="google" content="notranslate" />
+<link rel="icon" href="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7" />
+<link rel="stylesheet" href="/css/style.css" />
+
+<title>前端周刊 - 第12期 - 160327 - tech-share </title>
+<script>
+var c = {
+    name: '',
+    url: ''
+}
+</script>
+</head>
+<body>
+
+<div class="header">
+    <div class="center">
+        <h1><a href="/">tech-share</a></h1>
+        <p>You're still glowin', you're still crowin'</p>
+    </div>
+    <div class="menu">
+        <a href="/">home</a>
+        <a href="/archives">archives</a>
+    </div>
+</div>
+
+
+<div id="post" class="center">
+
+    <h1>前端周刊 - 第12期 - 160327</h1>
+    <p><a href="https://github.com/LoeiFy">LoeiFy</a> Posted at Mar 29, 2016 . -
+    <a href="/category/front-end/">front-end</a> -
+    </p>
+
+    <div class="content"><h2 id="-">积累提升</h2>
+<h3 id="-">响应式图像</h3>
+<p>html5.1草案纳入了picture元素、srcset、sizes属性，实现图片根据条件加载
+<a href="https://isux.tencent.com/responsive-image.html">https://isux.tencent.com/responsive-image.html</a></p>
+<h3 id="-">数组元素随机化排序算法实现</h3>
+<p>做活动的时候(闪灯效果),经常会使用到数组随机化.通俗名叫洗牌(shuffle)算法
+<a href="http://div.io/topic/1610">http://div.io/topic/1610</a></p>
+<h3 id="26-app-ui-">26款高品质 APP UI原型设计灵感</h3>
+<p>列举了很多很棒的原型图例子
+<a href="http://www.shejidaren.com/26-wireframe-designs.html">http://www.shejidaren.com/26-wireframe-designs.html</a></p>
+<h3 id="-css-filters">高级CSS filters</h3>
+<p>这篇文章我们一起来看看通过哪些CSS的新特性可以实现类似iOS系统中那种高斯模糊效果
+<a href="https://github.com/amfe/article/issues/9">https://github.com/amfe/article/issues/9</a></p>
+<h2 id="-">教程经验/解决方案</h2>
+<h3 id="-web-position-fixed-">移动端web页面使用position:fixed问题总结</h3>
+<p>最近项目有需要用到fixed，然后发现很多坑，看到了一篇总结了fixed坑的文章，<a href="http://zhibo.m.sohu.com/">http://zhibo.m.sohu.com/</a> 这是作者的项目，可以看到它的解决方案。
+<a href="https://github.com/maxzhang/maxzhang.github.com/issues/2">https://github.com/maxzhang/maxzhang.github.com/issues/2</a></p>
+<h3 id="-js-slideup">原生js模拟简单slideUp</h3>
+<pre><code class="lang-js"><span class="hljs-comment">/* slideUp */</span>
+    <span class="hljs-built_in">window</span>.Slider = (<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+        <span class="hljs-comment">// 定义Slider对象</span>
+        <span class="hljs-built_in">var</span> Slider = {};
+
+        <span class="hljs-comment">// I.定义一个TimerManager类</span>
+
+        <span class="hljs-comment">// 1）构造函数</span>
+        <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">TimerManager</span>(<span class="hljs-params"></span>) </span>{
+            <span class="hljs-keyword">this</span>.timers = [];       <span class="hljs-comment">// 保存定时器</span>
+            <span class="hljs-keyword">this</span>.args = [];         <span class="hljs-comment">// 保存定时器的参数</span>
+            <span class="hljs-keyword">this</span>.isFiring = <span class="hljs-literal">false</span>;
+        }
+
+        <span class="hljs-comment">// 2）静态方法：为element添加一个TimerManager实例</span>
+        TimerManager.makeInstance = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">element</span>) </span>{
+            <span class="hljs-comment">// 如果element.__TimerManager__上没有TimerManager，就为其添加一个</span>
+            <span class="hljs-keyword">if</span> (!element.__TimerManager__ || element.__TimerManager__.constructor != TimerManager) {
+                element.__TimerManager__ = <span class="hljs-keyword">new</span> TimerManager();
+            }
+        };
+
+        <span class="hljs-comment">// 3）扩展TimerManager原型，分别实现add，fire，next方法</span>
+        TimerManager.prototype.add = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">timer, args</span>) </span>{
+            <span class="hljs-keyword">this</span>.timers.push(timer);
+            <span class="hljs-keyword">this</span>.args.push(args);
+            <span class="hljs-keyword">this</span>.fire();
+        };
+
+        TimerManager.prototype.fire = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+            <span class="hljs-keyword">if</span> ( !<span class="hljs-keyword">this</span>.isFiring ) {
+                <span class="hljs-built_in">var</span> timer = <span class="hljs-keyword">this</span>.timers.shift(),        <span class="hljs-comment">// 取出定时器</span>
+                    args  = <span class="hljs-keyword">this</span>.args.shift();          <span class="hljs-comment">// 取出定时器参数</span>
+                <span class="hljs-keyword">if</span> (timer &amp;&amp; args) {
+                    <span class="hljs-keyword">this</span>.isFiring = <span class="hljs-literal">true</span>;
+                    <span class="hljs-comment">// 传入参数，执行定时器函数</span>
+                    timer(args[<span class="hljs-number">0</span>], args[<span class="hljs-number">1</span>]);
+                }
+            }
+        };
+
+        TimerManager.prototype.next = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+            <span class="hljs-keyword">this</span>.isFiring = <span class="hljs-literal">false</span>;
+            <span class="hljs-keyword">this</span>.fire();
+        };
+
+        <span class="hljs-comment">// II. 修改动画函数并在定时器结束后调用element.__TimerManager__.next()</span>
+
+        <span class="hljs-comment">// 1）下滑函数</span>
+        <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">fnSlideDown</span>(<span class="hljs-params">element, time</span>) </span>{
+            <span class="hljs-keyword">if</span> (element.offsetHeight == <span class="hljs-number">0</span>) {  <span class="hljs-comment">//如果当前高度为0，则执行下拉动画</span>
+                <span class="hljs-comment">// 获取元素总高度</span>
+                element.style.display = <span class="hljs-string">"block"</span>;            <span class="hljs-comment">// 1.显示元素，元素变为可见</span>
+                <span class="hljs-built_in">var</span> totalHeight = element.offsetHeight;     <span class="hljs-comment">// 2.保存总高度</span>
+                element.style.height = <span class="hljs-string">"0px"</span>;               <span class="hljs-comment">// 3.再将元素高度设置为0，元素又变为不可见</span>
+                <span class="hljs-comment">// 定义一个变量保存元素当前高度</span>
+                <span class="hljs-built_in">var</span> currentHeight = <span class="hljs-number">0</span>;                      <span class="hljs-comment">// 当前元素高度为0</span>
+                <span class="hljs-comment">// 计算每次增加的值</span>
+                <span class="hljs-built_in">var</span> increment = totalHeight / (time/<span class="hljs-number">10</span>);
+                <span class="hljs-comment">// 开始循环定时器</span>
+                setHeight(currentHeight);
+                <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">setHeight</span>(<span class="hljs-params">currentHeight</span>)</span>{
+                    <span class="hljs-built_in">var</span> timer = setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+                        <span class="hljs-comment">// 增加一部分高度</span>
+                        currentHeight = currentHeight + increment;
+                        <span class="hljs-comment">// 把当前高度赋值给height属性</span>
+                        element.style.height = currentHeight + <span class="hljs-string">"px"</span>;
+                        <span class="hljs-comment">// 如果当前高度大于或等于总高度则关闭定时器</span>
+                        <span class="hljs-keyword">if</span> (currentHeight &gt;= totalHeight) {
+                            <span class="hljs-comment">// 关闭定时器</span>
+                            clearInterval(timer);
+                            <span class="hljs-comment">// 把高度设置为总高度</span>
+                            element.style.height = totalHeight + <span class="hljs-string">"px"</span>;
+                            <span class="hljs-keyword">if</span> (element.__TimerManager__ &amp;&amp; element.__TimerManager__.constructor == TimerManager) {
+                                element.__TimerManager__.next();
+                            }
+                        } <span class="hljs-decorator"><span class="hljs-keyword">else</span></span> {
+                            clearInterval(timer);
+                            setHeight(currentHeight);
+                        }
+                    },<span class="hljs-number">10</span>)
+                }
+            } <span class="hljs-decorator"><span class="hljs-keyword">else</span></span> {  <span class="hljs-comment">// 如果当前高度不为0，则直接执行队列里的下一个函数</span>
+                <span class="hljs-keyword">if</span> (element.__TimerManager__ &amp;&amp; element.__TimerManager__.constructor == TimerManager) {
+                    element.__TimerManager__.next();
+                }
+            }
+        }
+
+        <span class="hljs-comment">// 2）上拉函数</span>
+        <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">fnSlideUp</span>(<span class="hljs-params">element, time</span>) </span>{
+            <span class="hljs-keyword">if</span> (element.offsetHeight &gt; <span class="hljs-number">0</span>) {  <span class="hljs-comment">// 如果当前高度不为0，则执行上滑动画</span>
+                <span class="hljs-comment">// 获取元素总高度</span>
+                <span class="hljs-built_in">var</span> totalHeight = element.offsetHeight;
+                <span class="hljs-comment">// 定义一个变量保存元素当前高度</span>
+                <span class="hljs-built_in">var</span> currentHeight = totalHeight;
+                <span class="hljs-comment">// 计算每次减去的值</span>
+                <span class="hljs-built_in">var</span> decrement = totalHeight / (time/<span class="hljs-number">10</span>);
+                <span class="hljs-comment">// 开始循环定时器</span>
+                setHeight(currentHeight);
+                <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">setHeight</span>(<span class="hljs-params">currentHeight</span>)</span>{
+                    <span class="hljs-built_in">var</span> timer = setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+                        <span class="hljs-comment">// 减去当前高度的一部分</span>
+                        currentHeight = currentHeight - decrement;
+                        <span class="hljs-comment">// 把当前高度赋值给height属性</span>
+                        element.style.height = currentHeight + <span class="hljs-string">"px"</span>;
+                        <span class="hljs-comment">// 如果当前高度小于等于0，就关闭定时器</span>
+                        <span class="hljs-keyword">if</span> (currentHeight &lt;= <span class="hljs-number">0</span>) {
+                            <span class="hljs-comment">// 关闭定时器</span>
+                            clearInterval(timer);
+                            <span class="hljs-comment">// 把元素display设置为none</span>
+                            element.style.display = <span class="hljs-string">"none"</span>;
+                            <span class="hljs-comment">// 把元素高度值还原</span>
+                            element.style.height = totalHeight + <span class="hljs-string">"px"</span>;
+                            <span class="hljs-keyword">if</span> (element.__TimerManager__ &amp;&amp; element.__TimerManager__.constructor == TimerManager) {
+                                element.__TimerManager__.next();
+                            }
+                        } <span class="hljs-decorator"><span class="hljs-keyword">else</span></span> {
+                            clearInterval(timer);
+                            setHeight(currentHeight);
+                        }
+                    },<span class="hljs-number">10</span>);
+                }
+            } <span class="hljs-decorator"><span class="hljs-keyword">else</span></span> {  <span class="hljs-comment">// 如果当前高度为0， 则直接执行队列里的下一个函数</span>
+                <span class="hljs-keyword">if</span> (element.__TimerManager__ &amp;&amp; element.__TimerManager__.constructor == TimerManager) {
+                    element.__TimerManager__.next();
+                }
+            }
+        }
+
+        <span class="hljs-comment">// III.定义外部访问接口</span>
+
+        <span class="hljs-comment">// 1）下拉接口</span>
+        Slider.slideDown = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">element, time</span>) </span>{
+            TimerManager.makeInstance(element);
+            element.__TimerManager__.add(fnSlideDown, <span class="hljs-built_in">arguments</span>);
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>;
+        };
+
+        <span class="hljs-comment">// 2）上滑接口</span>
+        Slider.slideUp = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">element, time</span>) </span>{
+            TimerManager.makeInstance(element);
+            element.__TimerManager__.add(fnSlideUp, <span class="hljs-built_in">arguments</span>);
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>;
+        };
+
+        <span class="hljs-comment">// 返回Slider对象</span>
+        <span class="hljs-keyword">return</span> Slider;
+    })();
+
+    <span class="hljs-comment">// 使用</span>
+    Slider.slideDown(ele,<span class="hljs-string">'500'</span>);
+    Slider.slideUp(ele,<span class="hljs-string">'500'</span>);
+</code></pre>
+<h2 id="-">启发思考</h2>
+<h3 id="-gulp-grunt-npm-scripts">我为何放弃Gulp与Grunt，转投npm scripts</h3>
+<p>作者对 <code>grunt, gulp</code> 吐槽了一下，推崇<code>npm scripts</code>；这个系列有三篇文章，都是在说这三者的东西
+<a href="http://www.infoq.com/cn/news/2016/02/gulp-grunt-npm-scripts-part1">http://www.infoq.com/cn/news/2016/02/gulp-grunt-npm-scripts-part1</a></p>
+<h3 id="-">前端优化不完全指南</h3>
+<p>本文主要从工作效率、速度性能、稳定性、响应式、兼容性、搜索SEO、信息无障碍等方面进行讲解。
+前端优化是一个让人技术提升的point，希望你也能从这里学到一些东西。
+<a href="http://aotu.io/notes/2016/03/16/optimization/">http://aotu.io/notes/2016/03/16/optimization/</a></p>
+</div>
+
+    <div class="label">
+    </div>
+
+    <div class="comment_list hide" id="disqus_thread"></div>
+    <div id="duoshuo_thread" class="comment_list hide ds-thread" data-thread-key="144182934" data-title="" data-url=""></div>
+
+    <button class="hide" data-id="144182934" id="comment">Add Comments</button>
+
+</div>
+
+<div class="footer">
+    <div class="center">
+        © 2016 tech-share . <a target="_blank" href="https://github.com/AcyOrt/acyort">AcyOrt</a> . <a target="_blank" href="/rss.xml">RSS</a>
+    </div>
+</div>
+
+
+<script src="/js/comment.js"></script>
+</body>
+</html>

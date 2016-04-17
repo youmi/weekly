@@ -1,4 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[tech-share]]></title><description><![CDATA[You're still glowin', you're still crowin']]></description><link>http://youmi.github.io/share</link><generator>RSS for Node</generator><lastBuildDate>Tue, 29 Mar 2016 08:12:46 GMT</lastBuildDate><atom:link href="http://youmi.github.io/share/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Tue, 29 Mar 2016 08:12:46 GMT</pubDate><item><title><![CDATA[No title]]></title><description><![CDATA[<h2 id="-">积累提升</h2>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Weekly]]></title><description><![CDATA[.]]></description><link>http://share.umlife.com</link><generator>RSS for Node</generator><lastBuildDate>Sun, 17 Apr 2016 08:38:53 GMT</lastBuildDate><atom:link href="http://share.umlife.com/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sun, 17 Apr 2016 08:38:53 GMT</pubDate><item><title><![CDATA[前端周刊 - 第13期 - 160406]]></title><description><![CDATA[<h3 id="-gtd">时间管理GTD</h3>
+<blockquote>
+<p><a href="http://www.90arther.net/jekyll/update/2016/04/03/GTD.html">http://www.90arther.net/jekyll/update/2016/04/03/GTD.html</a></p>
+</blockquote>
+<p>简介：程序猿日常时间管理小技巧</p>
+<h3 id="-2016-reactjs-">展望2016，Reactjs 最佳实践</h3>
+<blockquote>
+<p><a href="http://insights.thoughtworkers.org/react-js-best-practices-for-2016/">http://insights.thoughtworkers.org/react-js-best-practices-for-2016/</a></p>
+</blockquote>
+<h3 id="-chrome-github-">分享一个chrome插件，查看github时直接显示目录结构</h3>
+<p><img src="https://cloud.githubusercontent.com/assets/8241236/14304560/6fdf0974-fbe6-11e5-94a3-401477f3d72b.png" alt="image">
+<img src="https://cloud.githubusercontent.com/assets/8241236/14304562/75e7ff6a-fbe6-11e5-90fa-3b8d39a8e201.png" alt="image"></p>
+<p>附上项目github链接：<a href="https://github.com/buunguyen/octotree">https://github.com/buunguyen/octotree</a> </p>
+<h3 id="js-this-">JS 中 this 关键字详解</h3>
+<blockquote>
+<p><a href="https://segmentfault.com/a/1190000003046071">https://segmentfault.com/a/1190000003046071</a></p>
+</blockquote>
+<h3 id="js-this-settimeout-setinterval-arguments">JS黑魔法之this, setTimeout/setInterval, arguments</h3>
+<blockquote>
+<p><a href="http://www.cnblogs.com/joyeecheung/p/4018212.html">http://www.cnblogs.com/joyeecheung/p/4018212.html</a></p>
+</blockquote>
+]]></description><link>http://share.umlife.com/2016/04/146172430.html</link><guid isPermaLink="true">http://share.umlife.com/2016/04/146172430.html</guid><dc:creator><![CDATA[F-happy]]></dc:creator><pubDate>Sun, 17 Apr 2016 08:37:28 GMT</pubDate></item><item><title><![CDATA[前端周刊 - 第11期 - 160315]]></title><description><![CDATA[<h2 id="-">积累提升</h2>
 <h3 id="-web-">浅析Web开发中前端路由实现的几种方式</h3>
 <p>本文介绍了三种前端路由的方式：纯 HTML5、纯 hash、HTML5+hash</p>
 <p><a href="http://tonylee.pw/2015/03/%E6%B5%85%E6%9E%90web%E5%BC%80%E5%8F%91%E4%B8%AD%E5%89%8D%E7%AB%AF%E8%B7%AF%E7%94%B1%E5%AE%9E%E7%8E%B0%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F-2/">http://tonylee.pw/2015/03/%E6%B5%85%E6%9E%90web%E5%BC%80%E5%8F%91%E4%B8%AD%E5%89%8D%E7%AB%AF%E8%B7%AF%E7%94%B1%E5%AE%9E%E7%8E%B0%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F-2/</a></p>
@@ -38,7 +59,7 @@
 <h3 id="-b-">你的B计划在哪里?</h3>
 <p>最近心情有点暴躁啊大概是突然对感受到现实的迷茫.</p>
 <p><a href="http://www.ruanyifeng.com/blog/2016/03/plan-b.html">http://www.ruanyifeng.com/blog/2016/03/plan-b.html</a></p>
-]]></description><link>http://youmi.github.io/share/2016/03/144190489.html</link><guid isPermaLink="true">http://youmi.github.io/share/2016/03/144190489.html</guid><dc:creator><![CDATA[LoeiFy]]></dc:creator><pubDate>Tue, 29 Mar 2016 08:11:35 GMT</pubDate></item><item><title><![CDATA[No title]]></title><description><![CDATA[<h2 id="-">积累提升</h2>
+]]></description><link>http://share.umlife.com/2016/03/144190489.html</link><guid isPermaLink="true">http://share.umlife.com/2016/03/144190489.html</guid><dc:creator><![CDATA[LoeiFy]]></dc:creator><pubDate>Tue, 29 Mar 2016 08:11:35 GMT</pubDate></item><item><title><![CDATA[前端周刊 - 第12期 - 160327]]></title><description><![CDATA[<h2 id="-">积累提升</h2>
 <h3 id="-">响应式图像</h3>
 <p>html5.1草案纳入了picture元素、srcset、sizes属性，实现图片根据条件加载
 <a href="https://isux.tencent.com/responsive-image.html">https://isux.tencent.com/responsive-image.html</a></p>
@@ -59,7 +80,7 @@
 <pre><code class="lang-js"><span class="hljs-comment">/* slideUp */</span>
     <span class="hljs-built_in">window</span>.Slider = (<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
         <span class="hljs-comment">// 定义Slider对象</span>
-        <span class="hljs-built_in">var</span> Slider = {};
+        <span class="hljs-keyword">var</span> Slider = {};
 
         <span class="hljs-comment">// I.定义一个TimerManager类</span>
 
@@ -87,7 +108,7 @@
 
         TimerManager.prototype.fire = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
             <span class="hljs-keyword">if</span> ( !<span class="hljs-keyword">this</span>.isFiring ) {
-                <span class="hljs-built_in">var</span> timer = <span class="hljs-keyword">this</span>.timers.shift(),        <span class="hljs-comment">// 取出定时器</span>
+                <span class="hljs-keyword">var</span> timer = <span class="hljs-keyword">this</span>.timers.shift(),        <span class="hljs-comment">// 取出定时器</span>
                     args  = <span class="hljs-keyword">this</span>.args.shift();          <span class="hljs-comment">// 取出定时器参数</span>
                 <span class="hljs-keyword">if</span> (timer &amp;&amp; args) {
                     <span class="hljs-keyword">this</span>.isFiring = <span class="hljs-literal">true</span>;
@@ -109,16 +130,16 @@
             <span class="hljs-keyword">if</span> (element.offsetHeight == <span class="hljs-number">0</span>) {  <span class="hljs-comment">//如果当前高度为0，则执行下拉动画</span>
                 <span class="hljs-comment">// 获取元素总高度</span>
                 element.style.display = <span class="hljs-string">"block"</span>;            <span class="hljs-comment">// 1.显示元素，元素变为可见</span>
-                <span class="hljs-built_in">var</span> totalHeight = element.offsetHeight;     <span class="hljs-comment">// 2.保存总高度</span>
+                <span class="hljs-keyword">var</span> totalHeight = element.offsetHeight;     <span class="hljs-comment">// 2.保存总高度</span>
                 element.style.height = <span class="hljs-string">"0px"</span>;               <span class="hljs-comment">// 3.再将元素高度设置为0，元素又变为不可见</span>
                 <span class="hljs-comment">// 定义一个变量保存元素当前高度</span>
-                <span class="hljs-built_in">var</span> currentHeight = <span class="hljs-number">0</span>;                      <span class="hljs-comment">// 当前元素高度为0</span>
+                <span class="hljs-keyword">var</span> currentHeight = <span class="hljs-number">0</span>;                      <span class="hljs-comment">// 当前元素高度为0</span>
                 <span class="hljs-comment">// 计算每次增加的值</span>
-                <span class="hljs-built_in">var</span> increment = totalHeight / (time/<span class="hljs-number">10</span>);
+                <span class="hljs-keyword">var</span> increment = totalHeight / (time/<span class="hljs-number">10</span>);
                 <span class="hljs-comment">// 开始循环定时器</span>
                 setHeight(currentHeight);
                 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">setHeight</span>(<span class="hljs-params">currentHeight</span>)</span>{
-                    <span class="hljs-built_in">var</span> timer = setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+                    <span class="hljs-keyword">var</span> timer = setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
                         <span class="hljs-comment">// 增加一部分高度</span>
                         currentHeight = currentHeight + increment;
                         <span class="hljs-comment">// 把当前高度赋值给height属性</span>
@@ -132,13 +153,13 @@
                             <span class="hljs-keyword">if</span> (element.__TimerManager__ &amp;&amp; element.__TimerManager__.constructor == TimerManager) {
                                 element.__TimerManager__.next();
                             }
-                        } <span class="hljs-decorator"><span class="hljs-keyword">else</span></span> {
+                        } <span class="hljs-keyword">else</span> {
                             clearInterval(timer);
                             setHeight(currentHeight);
                         }
                     },<span class="hljs-number">10</span>)
                 }
-            } <span class="hljs-decorator"><span class="hljs-keyword">else</span></span> {  <span class="hljs-comment">// 如果当前高度不为0，则直接执行队列里的下一个函数</span>
+            } <span class="hljs-keyword">else</span> {  <span class="hljs-comment">// 如果当前高度不为0，则直接执行队列里的下一个函数</span>
                 <span class="hljs-keyword">if</span> (element.__TimerManager__ &amp;&amp; element.__TimerManager__.constructor == TimerManager) {
                     element.__TimerManager__.next();
                 }
@@ -149,15 +170,15 @@
         <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">fnSlideUp</span>(<span class="hljs-params">element, time</span>) </span>{
             <span class="hljs-keyword">if</span> (element.offsetHeight &gt; <span class="hljs-number">0</span>) {  <span class="hljs-comment">// 如果当前高度不为0，则执行上滑动画</span>
                 <span class="hljs-comment">// 获取元素总高度</span>
-                <span class="hljs-built_in">var</span> totalHeight = element.offsetHeight;
+                <span class="hljs-keyword">var</span> totalHeight = element.offsetHeight;
                 <span class="hljs-comment">// 定义一个变量保存元素当前高度</span>
-                <span class="hljs-built_in">var</span> currentHeight = totalHeight;
+                <span class="hljs-keyword">var</span> currentHeight = totalHeight;
                 <span class="hljs-comment">// 计算每次减去的值</span>
-                <span class="hljs-built_in">var</span> decrement = totalHeight / (time/<span class="hljs-number">10</span>);
+                <span class="hljs-keyword">var</span> decrement = totalHeight / (time/<span class="hljs-number">10</span>);
                 <span class="hljs-comment">// 开始循环定时器</span>
                 setHeight(currentHeight);
                 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">setHeight</span>(<span class="hljs-params">currentHeight</span>)</span>{
-                    <span class="hljs-built_in">var</span> timer = setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+                    <span class="hljs-keyword">var</span> timer = setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
                         <span class="hljs-comment">// 减去当前高度的一部分</span>
                         currentHeight = currentHeight - decrement;
                         <span class="hljs-comment">// 把当前高度赋值给height属性</span>
@@ -173,13 +194,13 @@
                             <span class="hljs-keyword">if</span> (element.__TimerManager__ &amp;&amp; element.__TimerManager__.constructor == TimerManager) {
                                 element.__TimerManager__.next();
                             }
-                        } <span class="hljs-decorator"><span class="hljs-keyword">else</span></span> {
+                        } <span class="hljs-keyword">else</span> {
                             clearInterval(timer);
                             setHeight(currentHeight);
                         }
                     },<span class="hljs-number">10</span>);
                 }
-            } <span class="hljs-decorator"><span class="hljs-keyword">else</span></span> {  <span class="hljs-comment">// 如果当前高度为0， 则直接执行队列里的下一个函数</span>
+            } <span class="hljs-keyword">else</span> {  <span class="hljs-comment">// 如果当前高度为0， 则直接执行队列里的下一个函数</span>
                 <span class="hljs-keyword">if</span> (element.__TimerManager__ &amp;&amp; element.__TimerManager__.constructor == TimerManager) {
                     element.__TimerManager__.next();
                 }
@@ -218,4 +239,4 @@
 <p>本文主要从工作效率、速度性能、稳定性、响应式、兼容性、搜索SEO、信息无障碍等方面进行讲解。
 前端优化是一个让人技术提升的point，希望你也能从这里学到一些东西。
 <a href="http://aotu.io/notes/2016/03/16/optimization/">http://aotu.io/notes/2016/03/16/optimization/</a></p>
-]]></description><link>http://youmi.github.io/share/2016/03/144182934.html</link><guid isPermaLink="true">http://youmi.github.io/share/2016/03/144182934.html</guid><dc:creator><![CDATA[LoeiFy]]></dc:creator><pubDate>Tue, 29 Mar 2016 08:12:05 GMT</pubDate></item></channel></rss>
+]]></description><link>http://share.umlife.com/2016/03/144182934.html</link><guid isPermaLink="true">http://share.umlife.com/2016/03/144182934.html</guid><dc:creator><![CDATA[LoeiFy]]></dc:creator><pubDate>Tue, 29 Mar 2016 08:12:05 GMT</pubDate></item></channel></rss>

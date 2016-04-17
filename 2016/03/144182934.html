@@ -3,38 +3,23 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<meta name="google" content="notranslate" />
 <link rel="icon" href="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7" />
 <link rel="stylesheet" href="/css/style.css" />
+<title> 前端周刊 - 第12期 - 160327 - Weekly </title>
 
-<title>前端周刊 - 第12期 - 160327 - tech-share </title>
-<script>
-var c = {
-    name: '',
-    url: ''
-}
-</script>
 </head>
 <body>
 
-<div class="header">
-    <div class="center">
-        <h1><a href="/">tech-share</a></h1>
-        <p>You're still glowin', you're still crowin'</p>
-    </div>
-    <div class="menu">
-        <a href="/">home</a>
-        <a href="/archives">archives</a>
-    </div>
-</div>
+<h1 class="header">
+    <span id="back">« 返回</span>
+    <a id="title" href="/">Weekly</a>
+</h1>
 
 
-<div id="post" class="center">
+<div class="post center">
 
-    <h1>前端周刊 - 第12期 - 160327</h1>
-    <p><a href="https://github.com/LoeiFy">LoeiFy</a> Posted at Mar 29, 2016 . -
-    <a href="/category/front-end/">front-end</a> -
-    </p>
+    <h2>前端周刊 - 第12期 - 160327</h2>
+    <p><a href="https://github.com/LoeiFy">LoeiFy</a> 发表于 3月 29, 2016 .</p>
 
     <div class="content"><h2 id="-">积累提升</h2>
 <h3 id="-">响应式图像</h3>
@@ -57,7 +42,7 @@ var c = {
 <pre><code class="lang-js"><span class="hljs-comment">/* slideUp */</span>
     <span class="hljs-built_in">window</span>.Slider = (<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
         <span class="hljs-comment">// 定义Slider对象</span>
-        <span class="hljs-built_in">var</span> Slider = {};
+        <span class="hljs-keyword">var</span> Slider = {};
 
         <span class="hljs-comment">// I.定义一个TimerManager类</span>
 
@@ -85,7 +70,7 @@ var c = {
 
         TimerManager.prototype.fire = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
             <span class="hljs-keyword">if</span> ( !<span class="hljs-keyword">this</span>.isFiring ) {
-                <span class="hljs-built_in">var</span> timer = <span class="hljs-keyword">this</span>.timers.shift(),        <span class="hljs-comment">// 取出定时器</span>
+                <span class="hljs-keyword">var</span> timer = <span class="hljs-keyword">this</span>.timers.shift(),        <span class="hljs-comment">// 取出定时器</span>
                     args  = <span class="hljs-keyword">this</span>.args.shift();          <span class="hljs-comment">// 取出定时器参数</span>
                 <span class="hljs-keyword">if</span> (timer &amp;&amp; args) {
                     <span class="hljs-keyword">this</span>.isFiring = <span class="hljs-literal">true</span>;
@@ -107,16 +92,16 @@ var c = {
             <span class="hljs-keyword">if</span> (element.offsetHeight == <span class="hljs-number">0</span>) {  <span class="hljs-comment">//如果当前高度为0，则执行下拉动画</span>
                 <span class="hljs-comment">// 获取元素总高度</span>
                 element.style.display = <span class="hljs-string">"block"</span>;            <span class="hljs-comment">// 1.显示元素，元素变为可见</span>
-                <span class="hljs-built_in">var</span> totalHeight = element.offsetHeight;     <span class="hljs-comment">// 2.保存总高度</span>
+                <span class="hljs-keyword">var</span> totalHeight = element.offsetHeight;     <span class="hljs-comment">// 2.保存总高度</span>
                 element.style.height = <span class="hljs-string">"0px"</span>;               <span class="hljs-comment">// 3.再将元素高度设置为0，元素又变为不可见</span>
                 <span class="hljs-comment">// 定义一个变量保存元素当前高度</span>
-                <span class="hljs-built_in">var</span> currentHeight = <span class="hljs-number">0</span>;                      <span class="hljs-comment">// 当前元素高度为0</span>
+                <span class="hljs-keyword">var</span> currentHeight = <span class="hljs-number">0</span>;                      <span class="hljs-comment">// 当前元素高度为0</span>
                 <span class="hljs-comment">// 计算每次增加的值</span>
-                <span class="hljs-built_in">var</span> increment = totalHeight / (time/<span class="hljs-number">10</span>);
+                <span class="hljs-keyword">var</span> increment = totalHeight / (time/<span class="hljs-number">10</span>);
                 <span class="hljs-comment">// 开始循环定时器</span>
                 setHeight(currentHeight);
                 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">setHeight</span>(<span class="hljs-params">currentHeight</span>)</span>{
-                    <span class="hljs-built_in">var</span> timer = setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+                    <span class="hljs-keyword">var</span> timer = setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
                         <span class="hljs-comment">// 增加一部分高度</span>
                         currentHeight = currentHeight + increment;
                         <span class="hljs-comment">// 把当前高度赋值给height属性</span>
@@ -130,13 +115,13 @@ var c = {
                             <span class="hljs-keyword">if</span> (element.__TimerManager__ &amp;&amp; element.__TimerManager__.constructor == TimerManager) {
                                 element.__TimerManager__.next();
                             }
-                        } <span class="hljs-decorator"><span class="hljs-keyword">else</span></span> {
+                        } <span class="hljs-keyword">else</span> {
                             clearInterval(timer);
                             setHeight(currentHeight);
                         }
                     },<span class="hljs-number">10</span>)
                 }
-            } <span class="hljs-decorator"><span class="hljs-keyword">else</span></span> {  <span class="hljs-comment">// 如果当前高度不为0，则直接执行队列里的下一个函数</span>
+            } <span class="hljs-keyword">else</span> {  <span class="hljs-comment">// 如果当前高度不为0，则直接执行队列里的下一个函数</span>
                 <span class="hljs-keyword">if</span> (element.__TimerManager__ &amp;&amp; element.__TimerManager__.constructor == TimerManager) {
                     element.__TimerManager__.next();
                 }
@@ -147,15 +132,15 @@ var c = {
         <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">fnSlideUp</span>(<span class="hljs-params">element, time</span>) </span>{
             <span class="hljs-keyword">if</span> (element.offsetHeight &gt; <span class="hljs-number">0</span>) {  <span class="hljs-comment">// 如果当前高度不为0，则执行上滑动画</span>
                 <span class="hljs-comment">// 获取元素总高度</span>
-                <span class="hljs-built_in">var</span> totalHeight = element.offsetHeight;
+                <span class="hljs-keyword">var</span> totalHeight = element.offsetHeight;
                 <span class="hljs-comment">// 定义一个变量保存元素当前高度</span>
-                <span class="hljs-built_in">var</span> currentHeight = totalHeight;
+                <span class="hljs-keyword">var</span> currentHeight = totalHeight;
                 <span class="hljs-comment">// 计算每次减去的值</span>
-                <span class="hljs-built_in">var</span> decrement = totalHeight / (time/<span class="hljs-number">10</span>);
+                <span class="hljs-keyword">var</span> decrement = totalHeight / (time/<span class="hljs-number">10</span>);
                 <span class="hljs-comment">// 开始循环定时器</span>
                 setHeight(currentHeight);
                 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">setHeight</span>(<span class="hljs-params">currentHeight</span>)</span>{
-                    <span class="hljs-built_in">var</span> timer = setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+                    <span class="hljs-keyword">var</span> timer = setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
                         <span class="hljs-comment">// 减去当前高度的一部分</span>
                         currentHeight = currentHeight - decrement;
                         <span class="hljs-comment">// 把当前高度赋值给height属性</span>
@@ -171,13 +156,13 @@ var c = {
                             <span class="hljs-keyword">if</span> (element.__TimerManager__ &amp;&amp; element.__TimerManager__.constructor == TimerManager) {
                                 element.__TimerManager__.next();
                             }
-                        } <span class="hljs-decorator"><span class="hljs-keyword">else</span></span> {
+                        } <span class="hljs-keyword">else</span> {
                             clearInterval(timer);
                             setHeight(currentHeight);
                         }
                     },<span class="hljs-number">10</span>);
                 }
-            } <span class="hljs-decorator"><span class="hljs-keyword">else</span></span> {  <span class="hljs-comment">// 如果当前高度为0， 则直接执行队列里的下一个函数</span>
+            } <span class="hljs-keyword">else</span> {  <span class="hljs-comment">// 如果当前高度为0， 则直接执行队列里的下一个函数</span>
                 <span class="hljs-keyword">if</span> (element.__TimerManager__ &amp;&amp; element.__TimerManager__.constructor == TimerManager) {
                     element.__TimerManager__.next();
                 }
@@ -218,23 +203,29 @@ var c = {
 <a href="http://aotu.io/notes/2016/03/16/optimization/">http://aotu.io/notes/2016/03/16/optimization/</a></p>
 </div>
 
-    <div class="label">
-    </div>
-
-    <div class="comment_list hide" id="disqus_thread"></div>
-    <div id="duoshuo_thread" class="comment_list hide ds-thread" data-thread-key="144182934" data-title="" data-url=""></div>
-
-    <button class="hide" data-id="144182934" id="comment">Add Comments</button>
-
 </div>
 
-<div class="footer">
-    <div class="center">
-        © 2016 tech-share . <a target="_blank" href="https://github.com/AcyOrt/acyort">AcyOrt</a> . <a target="_blank" href="/rss.xml">RSS</a>
-    </div>
+<div class="footer center">
+    © 2016 Weekly . <a target="_blank" href="https://github.com/AcyOrt/acyort">AcyOrt</a> . <a target="_blank" href="/rss.xml">RSS</a>
 </div>
 
 
-<script src="/js/comment.js"></script>
 </body>
+
+<script>
+Array.prototype.slice.call(document.links).forEach(function(link){
+   if (link.hostname != window.location.hostname) {
+       link.target = '_blank'
+   }
+})
+
+document.getElementById('back').addEventListener('click', function() {
+    if (document.referrer.indexOf(location.host) > -1) {
+        history.back()
+    } else {
+        location.href = document.getElementById('title').href
+    }
+})
+</script>
+
 </html>

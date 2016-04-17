@@ -1,3 +1,3 @@
-# share
+# weekly
 
 http://share.umlife.com

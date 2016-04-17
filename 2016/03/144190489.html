@@ -3,38 +3,23 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<meta name="google" content="notranslate" />
 <link rel="icon" href="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7" />
 <link rel="stylesheet" href="/css/style.css" />
+<title> 前端周刊 - 第11期 - 160315 - Weekly </title>
 
-<title>前端周刊 - 第11期 - 160315 - tech-share </title>
-<script>
-var c = {
-    name: '',
-    url: ''
-}
-</script>
 </head>
 <body>
 
-<div class="header">
-    <div class="center">
-        <h1><a href="/">tech-share</a></h1>
-        <p>You're still glowin', you're still crowin'</p>
-    </div>
-    <div class="menu">
-        <a href="/">home</a>
-        <a href="/archives">archives</a>
-    </div>
-</div>
+<h1 class="header">
+    <span id="back">« 返回</span>
+    <a id="title" href="/">Weekly</a>
+</h1>
 
 
-<div id="post" class="center">
+<div class="post center">
 
-    <h1>前端周刊 - 第11期 - 160315</h1>
-    <p><a href="https://github.com/LoeiFy">LoeiFy</a> Posted at Mar 29, 2016 . -
-    <a href="/category/front-end/">front-end</a> -
-    </p>
+    <h2>前端周刊 - 第11期 - 160315</h2>
+    <p><a href="https://github.com/LoeiFy">LoeiFy</a> 发表于 3月 29, 2016 .</p>
 
     <div class="content"><h2 id="-">积累提升</h2>
 <h3 id="-web-">浅析Web开发中前端路由实现的几种方式</h3>
@@ -78,23 +63,29 @@ var c = {
 <p><a href="http://www.ruanyifeng.com/blog/2016/03/plan-b.html">http://www.ruanyifeng.com/blog/2016/03/plan-b.html</a></p>
 </div>
 
-    <div class="label">
-    </div>
-
-    <div class="comment_list hide" id="disqus_thread"></div>
-    <div id="duoshuo_thread" class="comment_list hide ds-thread" data-thread-key="144190489" data-title="" data-url=""></div>
-
-    <button class="hide" data-id="144190489" id="comment">Add Comments</button>
-
 </div>
 
-<div class="footer">
-    <div class="center">
-        © 2016 tech-share . <a target="_blank" href="https://github.com/AcyOrt/acyort">AcyOrt</a> . <a target="_blank" href="/rss.xml">RSS</a>
-    </div>
+<div class="footer center">
+    © 2016 Weekly . <a target="_blank" href="https://github.com/AcyOrt/acyort">AcyOrt</a> . <a target="_blank" href="/rss.xml">RSS</a>
 </div>
 
 
-<script src="/js/comment.js"></script>
 </body>
+
+<script>
+Array.prototype.slice.call(document.links).forEach(function(link){
+   if (link.hostname != window.location.hostname) {
+       link.target = '_blank'
+   }
+})
+
+document.getElementById('back').addEventListener('click', function() {
+    if (document.referrer.indexOf(location.host) > -1) {
+        history.back()
+    } else {
+        location.href = document.getElementById('title').href
+    }
+})
+</script>
+
 </html>

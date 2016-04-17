@@ -1,0 +1,54 @@
+
+# site
+title: Weekly
+subtitle: .
+description: .
+rss: rss.xml
+
+# site url. can set as 'http://yoursite.com/child' if you need
+# please add 'http://' or 'https://'
+url: http://share.umlife.com
+
+# theme
+theme: aksdj4
+
+# pagination
+per_page: 10
+
+# menu
+menu:
+  - name: home
+    url: /
+  - name: archives
+    url: /archives
+
+# category
+default_category: uncategorized
+
+# html output directory or child directory e.g. 'child'
+public_dir: /
+
+# thumbnail mode 
+# 1: use the first image as thumbnail and remove the image
+# 2: use the first image as thumbnail but not remove the image
+thumbnail_mode: 2
+
+# comment
+duoshuo:
+disqus: 
+
+# site post authors filter
+authors:
+    - LoeiFy
+    - F-happy
+
+# site content issue
+# username/repository
+issue_repo: youmi/weekly
+
+# GitHub access token(Optional)
+# token should be separated by whitespace if you push this file to GitHub 
+# token: sd46a6d65a asd8sdbn
+
+# dev mode
+dev: false

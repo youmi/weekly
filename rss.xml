@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Weekly]]></title><description><![CDATA[.]]></description><link>http://share.umlife.com</link><generator>RSS for Node</generator><lastBuildDate>Sun, 17 Apr 2016 08:38:53 GMT</lastBuildDate><atom:link href="http://share.umlife.com/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sun, 17 Apr 2016 08:38:53 GMT</pubDate><item><title><![CDATA[前端周刊 - 第13期 - 160406]]></title><description><![CDATA[<h3 id="-gtd">时间管理GTD</h3>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Weekly]]></title><description><![CDATA[.]]></description><link>http://youmi.github.io/weekly</link><generator>RSS for Node</generator><lastBuildDate>Mon, 18 Apr 2016 01:47:12 GMT</lastBuildDate><atom:link href="http://youmi.github.io/weekly/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Mon, 18 Apr 2016 01:47:12 GMT</pubDate><item><title><![CDATA[前端周刊 - 第13期 - 160406]]></title><description><![CDATA[<h3 id="-gtd">时间管理GTD</h3>
 <blockquote>
 <p><a href="http://www.90arther.net/jekyll/update/2016/04/03/GTD.html">http://www.90arther.net/jekyll/update/2016/04/03/GTD.html</a></p>
 </blockquote>
@@ -19,7 +19,7 @@
 <blockquote>
 <p><a href="http://www.cnblogs.com/joyeecheung/p/4018212.html">http://www.cnblogs.com/joyeecheung/p/4018212.html</a></p>
 </blockquote>
-]]></description><link>http://share.umlife.com/2016/04/146172430.html</link><guid isPermaLink="true">http://share.umlife.com/2016/04/146172430.html</guid><dc:creator><![CDATA[F-happy]]></dc:creator><pubDate>Sun, 17 Apr 2016 08:37:28 GMT</pubDate></item><item><title><![CDATA[前端周刊 - 第11期 - 160315]]></title><description><![CDATA[<h2 id="-">积累提升</h2>
+]]></description><link>http://youmi.github.io/weekly/2016/04/146172430.html</link><guid isPermaLink="true">http://youmi.github.io/weekly/2016/04/146172430.html</guid><dc:creator><![CDATA[F-happy]]></dc:creator><pubDate>Sun, 17 Apr 2016 08:37:28 GMT</pubDate></item><item><title><![CDATA[前端周刊 - 第11期 - 160315]]></title><description><![CDATA[<h2 id="-">积累提升</h2>
 <h3 id="-web-">浅析Web开发中前端路由实现的几种方式</h3>
 <p>本文介绍了三种前端路由的方式：纯 HTML5、纯 hash、HTML5+hash</p>
 <p><a href="http://tonylee.pw/2015/03/%E6%B5%85%E6%9E%90web%E5%BC%80%E5%8F%91%E4%B8%AD%E5%89%8D%E7%AB%AF%E8%B7%AF%E7%94%B1%E5%AE%9E%E7%8E%B0%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F-2/">http://tonylee.pw/2015/03/%E6%B5%85%E6%9E%90web%E5%BC%80%E5%8F%91%E4%B8%AD%E5%89%8D%E7%AB%AF%E8%B7%AF%E7%94%B1%E5%AE%9E%E7%8E%B0%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F-2/</a></p>
@@ -59,7 +59,7 @@
 <h3 id="-b-">你的B计划在哪里?</h3>
 <p>最近心情有点暴躁啊大概是突然对感受到现实的迷茫.</p>
 <p><a href="http://www.ruanyifeng.com/blog/2016/03/plan-b.html">http://www.ruanyifeng.com/blog/2016/03/plan-b.html</a></p>
-]]></description><link>http://share.umlife.com/2016/03/144190489.html</link><guid isPermaLink="true">http://share.umlife.com/2016/03/144190489.html</guid><dc:creator><![CDATA[LoeiFy]]></dc:creator><pubDate>Tue, 29 Mar 2016 08:11:35 GMT</pubDate></item><item><title><![CDATA[前端周刊 - 第12期 - 160327]]></title><description><![CDATA[<h2 id="-">积累提升</h2>
+]]></description><link>http://youmi.github.io/weekly/2016/03/144190489.html</link><guid isPermaLink="true">http://youmi.github.io/weekly/2016/03/144190489.html</guid><dc:creator><![CDATA[LoeiFy]]></dc:creator><pubDate>Tue, 29 Mar 2016 08:11:35 GMT</pubDate></item><item><title><![CDATA[前端周刊 - 第12期 - 160327]]></title><description><![CDATA[<h2 id="-">积累提升</h2>
 <h3 id="-">响应式图像</h3>
 <p>html5.1草案纳入了picture元素、srcset、sizes属性，实现图片根据条件加载
 <a href="https://isux.tencent.com/responsive-image.html">https://isux.tencent.com/responsive-image.html</a></p>
@@ -239,4 +239,4 @@
 <p>本文主要从工作效率、速度性能、稳定性、响应式、兼容性、搜索SEO、信息无障碍等方面进行讲解。
 前端优化是一个让人技术提升的point，希望你也能从这里学到一些东西。
 <a href="http://aotu.io/notes/2016/03/16/optimization/">http://aotu.io/notes/2016/03/16/optimization/</a></p>
-]]></description><link>http://share.umlife.com/2016/03/144182934.html</link><guid isPermaLink="true">http://share.umlife.com/2016/03/144182934.html</guid><dc:creator><![CDATA[LoeiFy]]></dc:creator><pubDate>Tue, 29 Mar 2016 08:12:05 GMT</pubDate></item></channel></rss>
+]]></description><link>http://youmi.github.io/weekly/2016/03/144182934.html</link><guid isPermaLink="true">http://youmi.github.io/weekly/2016/03/144182934.html</guid><dc:creator><![CDATA[LoeiFy]]></dc:creator><pubDate>Tue, 29 Mar 2016 08:12:05 GMT</pubDate></item></channel></rss>

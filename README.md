@@ -1,3 +1,3 @@
 # weekly
 
-http://share.umlife.com
+http://youmi.github.io/weekly/

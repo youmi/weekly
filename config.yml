@@ -7,7 +7,7 @@ rss: rss.xml
 
 # site url. can set as 'http://yoursite.com/child' if you need
 # please add 'http://' or 'https://'
-url: http://share.umlife.com
+url: http://youmi.github.io/weekly
 
 # theme
 theme: aksdj4
